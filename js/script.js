@@ -13,7 +13,7 @@ const app = new Vue({
                     if (!this.emails.includes(aNewEmail)) {
                         this.emails.push(aNewEmail);
                     }
-                this.numberOfEmail++;
+                    this.numberOfEmail++;
                 })
                 .catch(function (error) {
                     console.log(error);
