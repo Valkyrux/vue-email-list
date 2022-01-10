@@ -16,7 +16,7 @@
     <body>
         <div id="app">
             <div class="loading-screen" v-if="emails.length != 10">
-                <i class="fas fa-circle-notch"></i> <span>Waiting for Server...</span>
+                <i class="fas fa-circle-notch"></i> <span>Waiting for Server<span class="dots">{{loadingDots}}</span></span>
             </div>
             <div class="content" v-else>
                 <ul>

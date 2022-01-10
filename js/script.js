@@ -3,6 +3,7 @@ const app = new Vue({
     data: {
         emails: [],
         numberOfEmail: 0,
+        loadingDots: ""
     },
     watch: {
         "numberOfEmail":  function () {
@@ -29,6 +30,14 @@ const app = new Vue({
         })
         .catch(function (error) {
             console.log(error);
-        })
+        });
+        setInterval(() => {
+            if(this.loadingDots != "...") {    
+                this.loadingDots += "."
+            } else {
+                this.loadingDots = ""
+            }
+        }, 400);
+
     }
 });

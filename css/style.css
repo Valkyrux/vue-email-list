@@ -31,6 +31,11 @@
     animation-iteration-count: infinite;
 }
 
+.dots {
+    width: 20px;
+    display: inline-block;
+}
+
 @keyframes rotation {
     from  {
         transform: rotate(0deg);
